@@ -26,10 +26,10 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>1.1.126.0</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <version>1.2.135.0</version>
+    <packageSourceUrl>https://github.com/jambonmcyeah/vulkan-sdk</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
+    <owners>jambon</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
@@ -38,53 +38,29 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>LunarG and Khronos Group</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.lunarg.com/vulkan-sdk/</projectUrl>
-    <iconUrl>https://www.khronos.org/assets/uploads/apis/2018-Vulkan-small-badge.png</iconUrl>
+    <iconUrl>https://raw.githack.com/jambonmcyeah/vulkan-sdk/master/icon.png</iconUrl>
     <copyright>
-        Copyright (c) 2015-2019 LunarG, Inc.
-        Copyright (c) 2015-2019 Valve Corporation
+        © 2015-2019 LunarG, Inc.
+        © 2015-2019 Valve Corporation
     </copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
-    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <licenseUrl>https://vulkan.lunarg.com/license</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/KhronosGroup</projectSourceUrl>
+    <docsUrl>https://vulkan.lunarg.com/doc/sdk</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>vulkan gpu</tags>
+    <bugTrackerUrl>https://github.com/KhronosGroup/</bugTrackerUrl>
+    <tags>vulkan gpu sdk</tags>
     <summary>The SDK for developing Vulkan applications</summary>
     <description>
-      The SDK provides the development and runtime components for building, running, and debugging Vulkan applications.
+The SDK provides the development and runtime components for building, running, and debugging Vulkan applications.
 
-      This comprehensive SDK includes the Vulkan loader, Vulkan layers, debugging tools, SPIR‐V tools, the Vulkan run time installer, documentation, samples, and demos.
-      
-      A thorough Vulkan Tutorial is also included to step you through the process of creating a simple Vulkan application, learning the basics of Vulkan along the way.
+This comprehensive SDK includes the Vulkan loader, Vulkan layers, debugging tools, SPIR‐V tools, the Vulkan run time installer, documentation, samples, and demos.
+
+A thorough Vulkan Tutorial is also included to step you through the process of creating a simple Vulkan application, learning the basics of Vulkan along the way.
     </description>
     <releaseNotes>
-        ## Released 11/4/2019
-
-        LunarG has released new Vulkan SDKs for Windows, Linux, and macOS based on the 1.1.126.0 header. This release includes maintenance updates and the latest extensions.
-        
-        ## Overview of new additions to Vulkan SDK 1.1.126.0
-        
-        - Improved validation layer coverage and bug fixes
-        
-        - Since the release of SDK 1.1.121.0, the following extensions have been added to the Vulkan spec and may be supported by a Vulkan device:
-        
-          * VK_KHR_spirv_1_4
-        
-          * VK_KHR_shader_clock
-        
-          * VK_KHR_timeline_semaphore
-        
-          * VK_KHR_shader_subgroup_extended_types
-        
-          * VK_GOOGLE_user_type
-        
-          * VK_IMG_format_pvrtc
-        
-        ## Reminder
-        
-        The VK_LUNARG_assistant_layer has been removed. This functionality has moved to the VK_LAYER_KHRONOS_validation as a new object (VK_VALIDATION_FEATURE_ENABLE_BEST_PRACTICES_EXT). Refer to the Best Practices documentation.
+https://vulkan.lunarg.com/doc/view/latest/windows/release_notes.html
     </releaseNotes>
 
   </metadata>
