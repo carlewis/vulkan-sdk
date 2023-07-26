@@ -2,7 +2,7 @@
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url        = "https://sdk.lunarg.com/sdk/download/$($env:ChocolateyPackageVersion)/windows/VulkanSDK-$($env:ChocolateyPackageVersion)-Installer.exe"
+$url        = "https://sdk.lunarg.com/sdk/download/1.$($env:ChocolateyPackageVersion)/windows/VulkanSDK-1.$($env:ChocolateyPackageVersion)-Installer.exe"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -10,9 +10,9 @@ $packageArgs = @{
   fileType      = 'exe'
   url           = $url
   softwareName  = 'VulkanSDK*'
-  checksum      = 'b64471f3a720e649c1fae6535ea83b8c642655ebed1485bfdf15bf4d88f746d9'
+  checksum      = 'fab945cdae8ab5d8f983ff9cda39d80cfe7ab644660e577e977566dd73380785'
   checksumType  = 'sha256'
-  silentArgs    = "/S"
+  silentArgs    = "--accept-licenses --default-answer --confirm-command install"
   validExitCodes= @(0)
 }
 
