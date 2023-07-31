@@ -63,9 +63,9 @@ A thorough Vulkan Tutorial is also included to step you through the process of c
 https://vulkan.lunarg.com/doc/view/latest/windows/release_notes.html
     </releaseNotes>
 
-    <!-- <dependencies>
+    <dependencies>
       <dependency id="visualstudio2019-workload-vctools" />
-    </dependencies> -->
+    </dependencies>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
